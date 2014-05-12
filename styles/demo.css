@@ -1,0 +1,12 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+div {
+  width: 5rem;
+  height: 5rem;
+  background-color: #3498db;
+  margin: 15rem auto;
+}
