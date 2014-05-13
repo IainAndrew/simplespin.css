@@ -150,6 +150,9 @@ hr {
   z-index: 100;
   display: none;
   height: 2.5rem;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 .header-fixed i.gear-big {
   font-size: 2em;
@@ -176,6 +179,8 @@ hr {
 }
 .demo {
   box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
   padding-bottom: 2rem;
 }
 pre {
@@ -248,6 +253,8 @@ pre code {
   color: white;
   text-align: center;
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
   padding-bottom: 3rem;
 }
 .tutorial hr {
