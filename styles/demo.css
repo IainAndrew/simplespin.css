@@ -1,0 +1,348 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* Small screens (default) */
+html {
+  font-size: 100%;
+}
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+  html {
+    font-size: 112%;
+  }
+}
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+}
+@media (min-width: 40rem) {
+  .column.flow-opposite {
+    float: right;
+  }
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+}
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .column.full {
+    width: 100%;
+  }
+  .column.two-thirds {
+    width: 66.7%;
+  }
+  .column.half {
+    width: 50%;
+  }
+  .column.third {
+    width: 33.3%;
+  }
+  .column.fourth {
+    width: 24.95%;
+  }
+  .column.flow-opposite {
+    float: right;
+  }
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h2 {
+  font-family: 'brandon_grotesque_regularRg';
+  font-weight: normal;
+  font-size: 2em;
+}
+h3 {
+  font-weight: normal;
+  font-family: 'ars_maquette_prolight';
+}
+p {
+  font-family: 'ars_maquette_prolight';
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+hr {
+  width: 50%;
+  border: 1px solid lightgrey;
+}
+.header {
+  text-align: center;
+  color: white;
+  background-color: #1abc9c;
+  padding-top: 1rem;
+}
+.header .title {
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 3em;
+  margin-top: 0;
+  margin-right: 0.2em;
+  display: inline;
+  letter-spacing: -0.04em;
+}
+.header i.gear-big {
+  font-size: 3em;
+}
+.header i.gear-small {
+  font-size: 2.3em;
+  margin-left: -0.1em;
+}
+.header .tagline {
+  font-style: italic;
+  font-family: 'ars_maquette_prolight';
+  margin-top: 0.5em;
+}
+.header ul.nav {
+  text-align: center;
+  padding: 0;
+  font-family: 'ars_maquette_prolight';
+}
+.header ul.nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #008060;
+}
+.header ul.nav li:hover {
+  color: #4ceece;
+}
+.header-fixed {
+  text-align: center;
+  color: white;
+  background-color: #1abc9c;
+  position: fixed;
+  top: 0;
+  padding-bottom: 0.3rem;
+  width: 100%;
+  z-index: 100;
+  display: none;
+  height: 2.5rem;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+}
+.header-fixed i.gear-big {
+  font-size: 2em;
+}
+.header-fixed i.gear-small {
+  font-size: 1.3em;
+  margin-left: -0.1em;
+}
+.header-fixed ul.nav {
+  text-align: center;
+  padding: 0;
+  font-family: 'ars_maquette_prolight';
+  display: inline;
+}
+.header-fixed ul.nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: #008060;
+}
+.header-fixed ul.nav li:hover {
+  color: #4ceece;
+}
+.intro {
+  box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ecffff;
+}
+.demo {
+  box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  padding-bottom: 2rem;
+}
+pre {
+  word-wrap: break-word;
+}
+pre.js-code {
+  text-align: left;
+}
+pre code {
+  font-size: 0.8em;
+}
+.ex-1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.ex-1 .ex-1-div {
+  height: 3rem;
+  width: 3rem;
+  background-color: #1abc9c;
+  margin: 0 auto;
+}
+.ex-2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.ex-2 .ex-2-div {
+  height: 3rem;
+  width: 3rem;
+  background-color: #e74c3c;
+  margin: 0 auto;
+}
+.ex-3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.ex-3 .ex-3-div {
+  height: 3rem;
+  width: 3rem;
+  background-color: #1abc9c;
+  margin: 0 auto;
+}
+.ex-4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.ex-4 .ex-4-div {
+  height: 3rem;
+  width: 3rem;
+  background-color: #e74c3c;
+  margin: 0 auto;
+}
+.ex-5 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.ex-5 .ex-5-div {
+  height: 3rem;
+  width: 3rem;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  cursor: pointer;
+  cursor: hand;
+}
+.ex-6 {
+  text-align: center;
+}
+.ex-6 i {
+  font-size: 3em;
+  padding: 0.2em;
+  color: #e74c3c;
+}
+.tutorial {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  padding-bottom: 3rem;
+}
+.tutorial hr {
+  border: 1px solid white;
+}
+.tutorial h3 {
+  font-size: 1.5em;
+}
+.breakdown {
+  font-size: 0.9em;
+  background-color: white;
+  color: #1abc9c;
+}
+.breakdown .column.half {
+  border-bottom: 1px solid lightgrey;
+}
+.breakdown .column.half.breakdown-class {
+  color: #e74c3c;
+}
+.breakdown .column.full.breakdown-par {
+  color: #e74c3c;
+  font-size: 1.7em;
+}
+.breakdown .column.full.breakdown-sep {
+  color: #e74c3c;
+  font-size: 1.3em;
+  font-family: 'brandon_grotesque_regularRg';
+  font-style: italic;
+  padding: 3em;
+}
+.download {
+  background-color: white;
+  color: #e74c3c;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.download h2 {
+  color: black;
+}
+.download p {
+  font-size: 0.8em;
+}
+.download button.download {
+  border: 0;
+  box-shadow: none;
+  background-color: #1abc9c;
+  color: white;
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-top: 1rem;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.download button.download:focus {
+  outline: none;
+}
+.download button.download:hover {
+  background-color: #009e7e;
+}
+.download .fork-me {
+  font-size: 1.5em;
+}
+.download .fork-me i {
+  font-size: 1.3em;
+}
+@media (max-width: 40rem) {
+  .breakdown .column.half.breakdown-class {
+    border: 0;
+  }
+}
+@media (max-width: 33rem) {
+  code {
+    font-size: 0.75em !important;
+  }
+}
