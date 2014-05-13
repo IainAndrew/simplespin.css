@@ -78,6 +78,9 @@ h2 {
 	font-weight:normal;
 	font-size:2em;
 }
+h3 {
+	font-weight:normal;
+}
 a {
 	text-decoration:none;
 	color:inherit;
@@ -125,8 +128,13 @@ a {
 //===============================================
 .demo {
 	box-shadow:inset 0 20px 10px -20px rgba(0,0,0,0.7);
+	padding-bottom:2rem;
 }
 pre {
+	word-wrap:break-word;
+	&.js-code {
+		text-align:left;
+	}
 	code {
 		font-size:0.8em;
 	}
@@ -169,9 +177,6 @@ pre {
 }
 .ex-5 {
 	text-align:center;
-	.js-code {
-		white-space:nowrap;
-	}
 	.ex-5-div {
 		height:3rem;
 		width:3rem;
@@ -183,9 +188,6 @@ pre {
 }
 .ex-6 {
 	text-align:center;
-	.js-code {
-		white-space:nowrap;
-	}
 	i {
 		font-size:3em;
 		padding:0.2em;
@@ -236,6 +238,7 @@ pre {
 	box-shadow:inset 0 20px 10px -20px rgba(0,0,0,0.7);
 	padding-bottom:3rem;
 	h2 {
+		color:black;
 	}
 	p {
 		font-size:0.8em;
@@ -248,6 +251,7 @@ pre {
 		font-family:@primaryFont;
 		font-size:2em;
 		padding:0.5em 1em 0.5em 1em;
+		margin-top:1rem;
 		-webkit-transition: background-color .5s;
 		transition: background-color .5s;
 		&:focus {
@@ -272,5 +276,10 @@ pre {
 		.column.half.breakdown-class {
 			border:0;
 		}	
+	}
+}
+@media (max-width: 33rem) {
+	code {
+		font-size:0.75em !important;
 	}
 }

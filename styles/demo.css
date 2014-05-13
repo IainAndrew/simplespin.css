@@ -83,6 +83,9 @@ h2 {
   font-weight: normal;
   font-size: 2em;
 }
+h3 {
+  font-weight: normal;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -125,6 +128,13 @@ a {
 }
 .demo {
   box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.7);
+  padding-bottom: 2rem;
+}
+pre {
+  word-wrap: break-word;
+}
+pre.js-code {
+  text-align: left;
 }
 pre code {
   font-size: 0.8em;
@@ -168,9 +178,6 @@ pre code {
 .ex-5 {
   text-align: center;
 }
-.ex-5 .js-code {
-  white-space: nowrap;
-}
 .ex-5 .ex-5-div {
   height: 3rem;
   width: 3rem;
@@ -181,9 +188,6 @@ pre code {
 }
 .ex-6 {
   text-align: center;
-}
-.ex-6 .js-code {
-  white-space: nowrap;
 }
 .ex-6 i {
   font-size: 3em;
@@ -226,6 +230,9 @@ pre code {
   box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.7);
   padding-bottom: 3rem;
 }
+.download h2 {
+  color: black;
+}
 .download p {
   font-size: 0.8em;
 }
@@ -237,6 +244,7 @@ pre code {
   font-family: 'brandon_grotesque_regularRg';
   font-size: 2em;
   padding: 0.5em 1em 0.5em 1em;
+  margin-top: 1rem;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
@@ -255,5 +263,10 @@ pre code {
 @media (max-width: 40rem) {
   .breakdown .column.half.breakdown-class {
     border: 0;
+  }
+}
+@media (max-width: 33rem) {
+  code {
+    font-size: 0.75em !important;
   }
 }
