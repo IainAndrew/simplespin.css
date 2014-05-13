@@ -177,6 +177,14 @@ hr {
 .header-fixed ul.nav li:hover {
   color: #4ceece;
 }
+.intro {
+  box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ecffff;
+}
 .demo {
   box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 20px 10px -22px rgba(0, 0, 0, 0.7);
@@ -204,6 +212,7 @@ pre code {
 }
 .ex-2 {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 .ex-2 .ex-2-div {
   height: 3rem;
@@ -213,6 +222,8 @@ pre code {
 }
 .ex-3 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .ex-3 .ex-3-div {
   height: 3rem;
@@ -222,6 +233,8 @@ pre code {
 }
 .ex-4 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .ex-4 .ex-4-div {
   height: 3rem;
@@ -231,6 +244,8 @@ pre code {
 }
 .ex-5 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .ex-5 .ex-5-div {
   height: 3rem;
