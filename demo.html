@@ -20,13 +20,15 @@
         <![endif]-->
 
 
-        <div class="clearfix">
-            <div class="column full header">
+        <div class="clearfix header">
+            <div class="column full">
                 <h1 class="title">simplespin.css</h1>
+                <i class="gear-big fa fa-gear spin-4s"></i>
+                <i class="gear-small fa fa-gear spin-4s spin-rev"></i>
                 <p class="tagline">easy rotation effects with nice semantic classes</p>
                 <ul class="nav">
                     <li>
-                        <a href="#">demo</a>
+                        <a href="#demo">demo</a>
                     </li>
                     <li>
                         <a href="#">tutorial</a>
@@ -39,6 +41,11 @@
         </div>
         <section class="demo">
             <div class="container">
+                <div class="clearfix">
+                    <column class="full">
+                        <h2>Demo</h2>
+                    </column>
+                </div>
                 <div class="clearfix ex-1">
                     <div class="clearfix">
                         <div class="column full">
@@ -117,12 +124,151 @@
                     </div>
                     <div class="clearfix">
                         <div class="column full">
-                            <pre><code>&lt;i class="fa fa-github">&lt;/i></code></pre>
+                            <pre><code>&lt;i class="fa fa-github">&lt;/i>
+&lt;i class="fa fa-pinterest">&lt;/i>
+&lt;i class="fa fa-dribble">&lt;/i></code></pre>
                             <pre class="js-code"><code>$("i").hover(function() { 
                                 $(this).toggleClass("spin-05s spin-once");
                                 });
                             </code></pre>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tutorial">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="column full">
+                        <h2>Tutorial</h2>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full">
+                        <h3>Using simplespin.css is easy:</h3>
+                        <p>Download and add simplespin.css to the &lt;head> of your HTML document.</p>
+                        <pre><code>&lt;link rel="stylesheet" href="simplespin.css"></code></pre>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full">
+                        <p>Add "spin-___" classes to the elements you want to spin!</p>
+                        <pre><code>&lt;span class="spin-1s">&lt;/span></code></pre>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full">
+                        <p>Here's a breakdown of the classes you can use:</p>
+                    </div>
+                </div>
+                <div class="clearfix breakdown">
+                    <div class="column full">
+                        <div class="column half breakdown-class">
+                            <p>.spin-02s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 0.2 seconds per spin</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-05s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 0.5 seconds per spin</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-1s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 1 second per spin</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-2s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 2 seconds per spin</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-3s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 3 seconds per spin</p>
+                        </div>
+                        <div class="column full breakdown-par">
+                            <p>...</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-10s</p>
+                        </div>
+                        <div class="column half">
+                            <p>Linear, infinite rotation – 10 seconds per spin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full breakdown-sep">
+                        <p>The following must be used in conjunction with one of the above classes</p>
+                    </div>
+                </div>
+                <div class="clearfix breakdown">
+                    <div class="column full">
+                        <div class="column half breakdown-class">
+                            <p>.spin-rev</p>
+                        </div>
+                        <div class="column half">
+                            <p>Anti-clockwise rotation</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-ease</p>
+                        </div>
+                        <div class="column half">
+                            <p>Non-linear, 'slow-fast-slow' animation</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-once</p>
+                        </div>
+                        <div class="column half">
+                            <p>Spins once only</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-twice</p>
+                        </div>
+                        <div class="column half">
+                            <p>Spins two times only</p>
+                        </div>
+                        <div class="column half breakdown-class">
+                            <p>.spin-thrice</p>
+                        </div>
+                        <div class="column half">
+                            <p>Spins three times only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="column full">
+                        <h2>Download</h2>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full">
+                        <p>Download the master branch of the simplespin.css project here. The main CSS file can be found in the 'styles' directory!</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column full">
+                        <a href="https://github.com/IainAndrew/simplespin.css/archive/master.zip">
+                            <button class="download">download</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix fork-me">
+                    <div class="column full">
+                        <p>Fork me on
+                            <a href="https://github.com/IainAndrew/simplespin.css"><i class="fa fa-github"></i></a>!
+                        </p>
                     </div>
                 </div>
             </div>

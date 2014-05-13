@@ -73,6 +73,16 @@ html {
   content: " ";
   display: table;
 }
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+h2 {
+  font-family: 'brandon_grotesque_regularRg';
+  font-weight: normal;
+  font-size: 2em;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -80,13 +90,22 @@ a {
 .header {
   text-align: center;
   color: white;
-  background-color: #2ecc71;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+  background-color: #1abc9c;
 }
 .header .title {
   font-family: 'brandon_grotesque_regularRg';
   font-size: 3em;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0.2em;
+  display: inline;
+  letter-spacing: -0.04em;
+}
+.header i.gear-big {
+  font-size: 3em;
+}
+.header i.gear-small {
+  font-size: 2.3em;
+  margin-left: -0.1em;
 }
 .header .tagline {
   font-style: italic;
@@ -101,6 +120,12 @@ a {
   margin-left: 1em;
   margin-right: 1em;
 }
+.header ul.nav li:hover {
+  color: #baffff;
+}
+.demo {
+  box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.7);
+}
 pre code {
   font-size: 0.8em;
 }
@@ -110,7 +135,7 @@ pre code {
 .ex-1 .ex-1-div {
   height: 3rem;
   width: 3rem;
-  background-color: #2ecc71;
+  background-color: #1abc9c;
   margin: 0 auto;
 }
 .ex-2 {
@@ -128,7 +153,7 @@ pre code {
 .ex-3 .ex-3-div {
   height: 3rem;
   width: 3rem;
-  background-color: #2ecc71;
+  background-color: #1abc9c;
   margin: 0 auto;
 }
 .ex-4 {
@@ -149,8 +174,10 @@ pre code {
 .ex-5 .ex-5-div {
   height: 3rem;
   width: 3rem;
-  background-color: #2ecc71;
+  background-color: #1abc9c;
   margin: 0 auto;
+  cursor: pointer;
+  cursor: hand;
 }
 .ex-6 {
   text-align: center;
@@ -162,4 +189,71 @@ pre code {
   font-size: 3em;
   padding: 0.2em;
   color: #e74c3c;
+}
+.tutorial {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+  padding-bottom: 3rem;
+}
+.breakdown {
+  font-size: 0.9em;
+  background-color: white;
+  color: #1abc9c;
+}
+.breakdown .column.half {
+  border-bottom: 1px solid lightgrey;
+}
+.breakdown .column.half.breakdown-class {
+  color: #e74c3c;
+}
+.breakdown .column.full.breakdown-par {
+  color: #e74c3c;
+  font-size: 1.7em;
+}
+.breakdown .column.full.breakdown-sep {
+  color: #e74c3c;
+  font-size: 1.3em;
+  font-family: 'brandon_grotesque_regularRg';
+  font-style: italic;
+  padding: 3em;
+}
+.download {
+  background-color: white;
+  color: #e74c3c;
+  text-align: center;
+  box-shadow: inset 0 20px 10px -20px rgba(0, 0, 0, 0.7);
+  padding-bottom: 3rem;
+}
+.download p {
+  font-size: 0.8em;
+}
+.download button.download {
+  border: 0;
+  box-shadow: none;
+  background-color: #1abc9c;
+  color: white;
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 2em;
+  padding: 0.5em 1em 0.5em 1em;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.download button.download:focus {
+  outline: none;
+}
+.download button.download:hover {
+  background-color: #009e7e;
+}
+.download .fork-me {
+  font-size: 1.5em;
+}
+.download .fork-me i {
+  font-size: 1.3em;
+}
+@media (max-width: 40rem) {
+  .breakdown .column.half.breakdown-class {
+    border: 0;
+  }
 }
