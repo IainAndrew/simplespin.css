@@ -9,3 +9,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'ars_maquette_prolight';
+    src: url('arsmaquettepro-light-webfont.eot');
+    src: url('arsmaquettepro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arsmaquettepro-light-webfont.woff') format('woff'),
+         url('arsmaquettepro-light-webfont.ttf') format('truetype'),
+         url('arsmaquettepro-light-webfont.svg#ars_maquette_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

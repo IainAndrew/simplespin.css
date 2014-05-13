@@ -28,13 +28,30 @@
                 <p class="tagline">easy rotation effects with nice semantic classes</p>
                 <ul class="nav">
                     <li>
-                        <a href="#demo">demo</a>
+                        <a id="nav-demo" href="#demo">demo</a>
                     </li>
                     <li>
-                        <a href="#">tutorial</a>
+                        <a id="nav-tutorial" href="#tutorial">tutorial</a>
                     </li>
                     <li>
-                        <a href="#">download</a>
+                        <a id ="nav-download" href="#download">download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix header-fixed">
+            <div class="column full">
+                <i class="gear-big fa fa-gear spin-4s"></i>
+                <i class="gear-small fa fa-gear spin-4s spin-rev"></i>
+                <ul class="nav">
+                    <li>
+                        <a id="fix-nav-demo" href="#demo">demo</a>
+                    </li>
+                    <li>
+                        <a id="fix-nav-tutorial" href="#tutorial">tutorial</a>
+                    </li>
+                    <li>
+                        <a id ="fix-nav-download" href="#download">download</a>
                     </li>
                 </ul>
             </div>
@@ -44,6 +61,7 @@
                 <div class="clearfix">
                     <column class="full">
                         <h2>Demo</h2>
+                        <hr />
                     </column>
                 </div>
                 <div class="clearfix ex-1">
@@ -97,14 +115,14 @@
                 <div class="clearfix ex-5">
                     <div class="clearfix">
                         <div class="column full">
-                            <h3>Works great with jQuery! Click it!</h3>
+                            <h3>Works great with jQuery! Hover over it!</h3>
                             <div class="ex-5-div"></div>
                         </div>
                     </div>
                     <div class="clearfix">
                         <div class="column full">
                             <pre><code>&lt;div>&lt;/div></code></pre>
-                            <pre class="js-code"><code>$("div").click(function() { 
+                            <pre class="js-code"><code>$("div").hover(function() { 
     $(this).toggleClass("spin-1s spin-once spin-ease");
 });
                             </code></pre>
@@ -141,6 +159,7 @@
                 <div class="clearfix">
                     <div class="column full">
                         <h2>Tutorial</h2>
+                        <hr />
                     </div>
                 </div>
                 <div class="clearfix">
@@ -253,11 +272,12 @@
                 <div class="clearfix">
                     <div class="column full">
                         <h2>Download</h2>
+                        <hr />
                     </div>
                 </div>
                 <div class="clearfix">
                     <div class="column full">
-                        <p>Download the master branch of the simplespin.css project here. The main CSS file can be found in the 'styles' directory!</p>
+                        <p>Download the master branch of the simplespin.css project here. <u>The main CSS file can be found in the 'styles' directory!</u></p>
                     </div>
                 </div>
                 <div class="clearfix">
@@ -281,6 +301,7 @@
         <script src="scripts/jquery.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -289,6 +310,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+    -->
         
         <script src="scripts/main.js"></script>
 
