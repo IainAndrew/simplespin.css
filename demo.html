@@ -2,12 +2,17 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>simplespin.css</title>
+        <title>simplespin.css | easy rotation effects with nice semantic classes</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="styles/simplespin.css">
         <link rel="stylesheet" href="styles/demo.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/fonts/fonts.css">
+        <link rel="stylesheet" href="styles/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+        <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -15,8 +20,116 @@
         <![endif]-->
 
 
-        <div class="spin-2s"></div>
+        <div class="clearfix">
+            <div class="column full header">
+                <h1 class="title">simplespin.css</h1>
+                <p class="tagline">easy rotation effects with nice semantic classes</p>
+                <ul class="nav">
+                    <li>
+                        <a href="#">demo</a>
+                    </li>
+                    <li>
+                        <a href="#">tutorial</a>
+                    </li>
+                    <li>
+                        <a href="#">download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="demo">
+            <div class="container">
+                <div class="clearfix ex-1">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <div class="ex-1-div spin-1s"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;div class="spin-1s">&lt;/div></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix ex-2">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <div class="ex-2-div spin-5s"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;div class="spin-5s">&lt;/div></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix ex-3">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <div class="ex-3-div spin-3s spin-rev"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;div class="spin-3s spin-rev">&lt;/div></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix ex-4">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <div class="ex-4-div spin-1s spin-ease"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;div class="spin-05s spin-ease">&lt;/div></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix ex-5">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <h3>Works great with jQuery! Click it!</h3>
+                            <div class="ex-5-div"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;div>&lt;/div></code></pre>
+                            <pre class="js-code"><code>$("div").click(function() { 
+                                $(this).toggleClass("spin-1s spin-once spin-ease");
+                                });
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix ex-6">
+                    <div class="clearfix">
+                        <div class="column full">
+                            <h3>Try it on your social icons!</h3>
+                            <div class="social-icons">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-dribbble"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="column full">
+                            <pre><code>&lt;i class="fa fa-github">&lt;/i></code></pre>
+                            <pre class="js-code"><code>$("i").hover(function() { 
+                                $(this).toggleClass("spin-05s spin-once");
+                                });
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- jQuery -->
+        <script src="scripts/jquery.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -27,7 +140,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
+        
         <script src="scripts/main.js"></script>
 
 </body>

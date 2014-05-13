@@ -1,3 +1,8 @@
+@primaryColor: #2ecc71;
+@secondaryColor: #e74c3c;
+
+@headerFont: 'brandon_grotesque_regularRg';
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -5,9 +10,158 @@
     padding: 0.2em 0;
 }
 
-div {
-	width:5rem;
-	height:5rem;
-	background-color:#3498db;
-	margin:15rem auto;
+//============================================== GRID
+
+/* Small screens (default) */
+html { 
+	font-size: 100%; 
+}
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+	html { 
+		font-size: 112%; 
+	}
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+	html { 
+		font-size: 120%; 
+	}
+}
+@media (min-width: 40rem) {
+	.column.flow-opposite { 
+		float: right; 
+	}
+}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	max-width: 48rem;
+	width: 90%;
+}
+@media (min-width: 40rem) {
+	.column {
+		float: left;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.column.full { width: 100%; }
+	.column.two-thirds { width: 66.7%; }
+	.column.half { width: 50%; }
+	.column.third { width: 33.3%; }
+	.column.fourth { width: 24.95%; }
+	.column.flow-opposite { float: right; }
+}
+.clearfix {
+	*zoom: 1;
+	&:after {
+		clear:both;
+	}
+	&:after, &:before {
+		content:" ";
+		display:table;
+	}
+}
+// ==============================================
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+.header {
+	text-align:center;
+	color:white;
+	background-color:@primaryColor;
+	box-shadow:3px 0 5px rgba(0,0,0,0.5);
+	.title {
+		font-family:@headerFont;
+		font-size:3em;
+		margin:0;
+	}
+	.tagline {
+		font-style:italic;
+	}
+	ul.nav {
+		text-align:center;
+		padding:0;
+		li {
+			list-style-type:none;
+			display:inline-block;
+			margin-left:1em;
+			margin-right:1em;
+		}
+	}
+}
+
+// DEMO 
+//===============================================
+pre {
+	code {
+		font-size:0.8em;
+	}
+}
+.ex-1 {
+	text-align:center;
+	.ex-1-div {
+		height:3rem;
+		width:3rem;
+		background-color:@primaryColor;
+		margin:0 auto;
+	}
+}
+.ex-2 {
+	text-align:center;
+	.ex-2-div {
+		height:3rem;
+		width:3rem;
+		background-color:@secondaryColor;
+		margin:0 auto;
+	}
+}
+.ex-3 {
+	text-align:center;
+	.ex-3-div {
+		height:3rem;
+		width:3rem;
+		background-color:@primaryColor;
+		margin:0 auto;
+	}
+}
+.ex-4 {
+	text-align:center;
+	.ex-4-div {
+		height:3rem;
+		width:3rem;
+		background-color:@secondaryColor;
+		margin:0 auto;
+	}
+}
+.ex-5 {
+	text-align:center;
+	.js-code {
+		white-space:nowrap;
+	}
+	.ex-5-div {
+		height:3rem;
+		width:3rem;
+		background-color:@primaryColor;
+		margin:0 auto;
+	}
+}
+.ex-6 {
+	text-align:center;
+	.js-code {
+		white-space:nowrap;
+	}
+	i {
+		font-size:3em;
+		padding:0.2em;
+		color:@secondaryColor;
+	}
 }
